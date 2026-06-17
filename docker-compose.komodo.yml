@@ -1,0 +1,18 @@
+# Komodo stack: deploys the pre-built image published to GHCR by the
+# "Publish container" GitHub Action (.github/workflows/docker-publish.yml).
+# Unlike docker-compose.yml (which builds locally), this only pulls.
+#
+# If the GHCR package is private, add the GitHub account in Komodo so it can
+# authenticate the pull; making the package public needs no credentials.
+services:
+  nuzlocke:
+    image: ghcr.io/callie-sylph/nuzlocke.app:${IMAGE_TAG:-latest}
+    container_name: nuzlocke
+    restart: unless-stopped
+    pull_policy: always
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOST=0.0.0.0
