@@ -3,7 +3,7 @@
   import { onMount } from 'svelte'
   import { readdata, patchlocation } from '$lib/store'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Edit } from '$icons'
 
   let value

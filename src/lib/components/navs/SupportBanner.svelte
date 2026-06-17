@@ -6,7 +6,7 @@
   import { random } from '$lib/utils/arr'
 
   import { PIcon } from '$lib/components/core'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Coffee } from '$icons'
   
   const SUPPORTED = 'supported'

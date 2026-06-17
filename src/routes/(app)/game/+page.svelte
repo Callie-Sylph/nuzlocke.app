@@ -9,7 +9,7 @@
   import { GameRoute, Search } from '$lib/components/Game'
   import { Settings } from '$lib/components/Settings'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Arrow, Hide } from '$icons'
 
   import deferStyles from '$lib/utils/defer-styles'

@@ -1,8 +1,32 @@
-# Nuzlock tracker
+# Nuzlocke tracker
 
-This project is designed for tracking Nuzlocke runs, the Pokemon
-you've encountered and their status. But it also provides information
-and adivce for Bosses you face. 
+Track your Nuzlocke runs — the Pokémon you've encountered and their
+status — with info and advice for the Bosses you face.
+
+This is a fork of [domtronn/dc-nuzlocke](https://github.com/domtronn/dc-nuzlocke),
+maintained by [CallieSylph](https://github.com/Callie-Sylph). It's modernised
+to run on stable SvelteKit 1 / Vite 4 / Svelte 4, has all third-party
+telemetry removed, and is set up to self-host via Docker.
+
+### Running with Docker
+
+The app builds to a self-contained Node server (`@sveltejs/adapter-node`)
+and ships as a multi-stage image. To build and run:
+
+```
+docker compose up -d --build
+```
+
+It listens on port `3000` (configurable in `docker-compose.yml`). The
+large `pokemon-sprites` dependency is build-only — sprites are inlined
+into the build output — so it never ships in the final image.
+
+For local development instead:
+
+```
+npm install
+npm run dev
+```
 
 ### Contributing
 
@@ -75,9 +99,6 @@ them out and thank their creators.
 
 ### Useful links
 
-- [Sentry](https://sentry.io/organizations/nuzlocke-tracker/issues/?project=6109144) - Sentry error tracking
-- [Analytics](https://nuzlocke-analytics.vercel.app/) - Page views and click trackingc
-- [Updates & Support](https://www.buymeacoffee.com/dashboard) - Follow feature updates and support me
 - [PixelIt](https://giventofly.github.io/pixelit/#tryit) - A Pixelator for making custom assets
 - [Usprited](https://github.com/linuxenko/usprited) - A sprite sheet editor & CSS generator
 

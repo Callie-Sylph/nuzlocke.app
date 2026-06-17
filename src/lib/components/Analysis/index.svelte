@@ -8,7 +8,7 @@
   import TypeMessage from './Message.svelte'
 
   import { IconButton } from '$lib/components/core'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Analysis } from '$icons'
   import { Sort, X } from '$icons'
 

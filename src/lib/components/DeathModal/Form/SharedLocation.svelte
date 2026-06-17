@@ -21,7 +21,7 @@
     Route,
     Trophy
   } from '$icons'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
 
   export let placeholder = 'Encounter location',
     route = 'gym'

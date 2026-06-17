@@ -14,4 +14,4 @@ export { default as PIcon } from './PokemonIcon.svelte'
 export { default as Picture } from './Picture.svelte'
 export { default as Logo } from './Logo.svelte'
 
-export { default as Icon } from '@iconify/svelte/dist/OfflineIcon.svelte'
+export { default as Icon } from '@iconify/svelte'

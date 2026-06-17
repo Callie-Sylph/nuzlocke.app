@@ -26291,6 +26291,13 @@
       "boss": "Giovanni"
     },
     {
+      "type": "route",
+      "name": "Silph Co.",
+      "encounters": [
+        "lapras"
+      ]
+    },
+    {
       "type": "gym",
       "name": "Saffron City Gym",
       "value": "6",
@@ -36329,6 +36336,13 @@
       "value": "g2",
       "group": "evil-team",
       "boss": "Giovanni"
+    },
+    {
+      "type": "route",
+      "name": "Silph Co.",
+      "encounters": [
+        "lapras"
+      ]
     },
     {
       "type": "gym",

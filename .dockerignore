@@ -1,0 +1,9 @@
+# Keep the build context small. Note: src/docs/*.md is imported by the app
+# (vite-plugin-markdown), so we do NOT ignore markdown.
+node_modules
+build
+.svelte-kit
+.git
+.github
+.vercel
+*.log

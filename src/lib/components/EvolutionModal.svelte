@@ -6,7 +6,7 @@
   import { capitalise, regionise } from '$lib/utils/string'
 
   import Picon from '$lib/components/core/PokemonIcon.svelte'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Bubbles } from '$icons'
 
   import { getContext } from 'svelte'

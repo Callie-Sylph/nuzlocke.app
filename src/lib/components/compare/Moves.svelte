@@ -10,7 +10,7 @@
   import { Tooltip } from '$lib/components/core'
   import { CompareSummary } from './'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Info } from '$icons'
 
   const moves = (opp?.original?.moves || []).reduce(

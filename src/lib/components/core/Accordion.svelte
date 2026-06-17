@@ -1,7 +1,7 @@
 <script>
   import { slide } from 'svelte/transition'
   import { Chevron } from '$icons'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
 
   let isOpen = false
   const toggle = () => (isOpen = !isOpen)

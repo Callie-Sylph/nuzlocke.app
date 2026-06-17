@@ -2,7 +2,7 @@
   import { theme } from '$lib/store'
   import { sineInOut } from 'svelte/easing'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { DarkMode } from '$icons'
   import { LightMode } from '$icons'
 

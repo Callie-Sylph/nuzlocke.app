@@ -4,7 +4,7 @@
   import { IMG } from '$lib/utils/rewrites'
   import { SVGs } from './'
   import ThemeToggle from '$c/theme-toggle.svelte'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Home } from '$icons'
   import { Track } from '$icons'
 

@@ -1,18 +1,18 @@
 <script>
   import { onMount, createEventDispatcher } from 'svelte'
   const dispatch = createEventDispatcher()
-  
+
   export let src, expected
-  let script
-  
-  onMount(_ => {
+
+  onMount(() => {
     if (expected && window[expected]) return dispatch('loaded')
 
-    script.addEventListener('load', _ => dispatch('loaded'))
-    script.addEventListener('error', _ => dispatch('error'))
+    const script = document.createElement('script')
+    script.src = src
+    script.addEventListener('load', () => dispatch('loaded'))
+    script.addEventListener('error', () => dispatch('error'))
+    document.head.appendChild(script)
+
+    return () => script.remove()
   })
 </script>
-
-<svelte:head>
-  <script bind:this={script} {src} />
-</svelte:head>

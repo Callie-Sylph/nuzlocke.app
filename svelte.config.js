@@ -1,9 +1,15 @@
 import preprocess from 'svelte-preprocess';
-import vercel from '@sveltejs/adapter-vercel';
+import node from '@sveltejs/adapter-node';
 
 export default {
   kit: {
-    adapter: vercel()
+    adapter: node(),
+    prerender: {
+      // Self-hosted: don't fail the build on stale links / missing static
+      // assets (e.g. the upstream social-share image). Warn instead.
+      handleHttpError: 'warn',
+      handleMissingId: 'warn'
+    }
   },
 
   preprocess: [

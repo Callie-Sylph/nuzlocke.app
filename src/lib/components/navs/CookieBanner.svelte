@@ -3,7 +3,7 @@
   import { slide } from 'svelte/transition'
   import { consent } from '$lib/store'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte';
+  import Icon from '@iconify/svelte';
   import { Cookie } from '$icons'
 
   let mounted

@@ -3,7 +3,7 @@
   import { setContext, afterUpdate } from 'svelte'
 
   import { page } from '$app/stores'
-  import { createUser, readdata } from '$lib/store'
+  import { readdata } from '$lib/store'
 
   import { RegionMap } from '$lib/data/games'
   import { GameHeading, NavHeading } from '$c/navs'
@@ -56,8 +56,6 @@
   })
 
   const onresize = () => (document.body.height = window.innerHeight)
-
-  $: createUser()
 </script>
 
 <svelte:window on:resize={onresize} />

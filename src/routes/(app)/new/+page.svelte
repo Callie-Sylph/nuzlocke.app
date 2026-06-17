@@ -12,7 +12,7 @@
   } from '$lib/components/core'
   import AutoComplete from '$c/core/AutoCompleteV2.svelte'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { File, Dice } from '$icons'
 
   import Games from '$lib/data/games.json'

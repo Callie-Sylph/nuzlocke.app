@@ -1,7 +1,7 @@
 <script>
   import { page } from '$app/stores'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Home } from '$icons'
 
   import ThemeToggle from '$lib/components/theme-toggle.svelte'

@@ -3,7 +3,7 @@
   import { toSlug, toId, capitalise } from '$utils/string'
 
   import { PIcon } from '$c/core'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Chevron } from '$icons'
 
   const splitAt = (arr, i) => [arr.slice(0, i), arr.slice(i)]

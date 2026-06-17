@@ -1,7 +1,7 @@
 <script>
   export let title, icon, containerClassName = '', className = ''
   import { PixelatedContainer } from '$lib/components/containers'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
 </script>
 
 <div class='container mx-auto mt-32 sm:mt-16 w-full flex flex-col justify-center {containerClassName}'>

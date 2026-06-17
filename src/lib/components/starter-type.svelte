@@ -4,7 +4,7 @@
 
   import { Wrapper as SettingWrapper } from '$lib/components/Settings'
   import { color } from '$lib/data/colors.ts'
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
 
   import { PIcon } from '$c/core'
   import { Fire, Water, Grass } from '$icons'

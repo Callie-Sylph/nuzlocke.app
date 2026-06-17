@@ -5,7 +5,7 @@
   import { PIcon, Tooltip } from '$c/core'
   import TypeBadge from '$c/type-badge.svelte'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Link } from '$icons'
 </script>
 

@@ -1,7 +1,7 @@
 <script>
   export let max, stat, val, mod = 1, className = ''
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Chevron as Priority } from '$icons'
 
   let c

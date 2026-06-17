@@ -5,7 +5,7 @@
 
   import { capitalise, toSlug, toId } from '$utils/string'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Link } from '$icons'
 
   import { GuideBossOrder } from '$lib/data/groups'

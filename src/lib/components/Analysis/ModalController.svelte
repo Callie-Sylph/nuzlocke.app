@@ -3,7 +3,7 @@
   import { IconButton } from '$lib/components/core'
   import { Bubbles } from '$lib/utils/pattern'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Analysis } from '$icons'
 
   export let box

@@ -11,7 +11,7 @@
   import { format } from '$c/DeathModal/prose'
   import { Tooltip, Picture } from '$c/core'
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Quote, Edit, Plus } from '$icons'
 
   import { getContext, createEventDispatcher } from 'svelte'

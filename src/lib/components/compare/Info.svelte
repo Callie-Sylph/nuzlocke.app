@@ -6,7 +6,7 @@
 
   const [team, opp] = pokemon
 
-  import Icon from '@iconify/svelte/dist/OfflineIcon.svelte'
+  import Icon from '@iconify/svelte'
   import { Shield } from '$icons'
 
   import TypeLogo from '$lib/components/type-logo.svelte'
